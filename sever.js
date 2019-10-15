@@ -1,5 +1,5 @@
 const express = require('express')
-const app = exress()
+const app = express()
 const PORT = 7000
 const morgan = require('morgan')
 const mongoose = require('mongoose')
@@ -14,7 +14,7 @@ app.use('/bookscms', require('./routes/bookRouter.js'))
 //DB collection
 mongoose.connect('mongodb://localhost:27017/bookscmsdb',
 {
-    usedNewUrlParser: true,
+    useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
     useUnifiedTopology: true
