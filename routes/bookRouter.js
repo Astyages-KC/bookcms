@@ -43,4 +43,19 @@ bookRouter.post("/", (req, res, next) => {
     return res.send(newBook);
 })
 
+
+// Delete
+bookRouter.delete("/:_id", (req, res, next) => {
+    Book.findOneAndRemove(
+        { _id: req.params._id },
+        (err, book) => {
+            if (err) {
+                res.status(500);
+                return next(err);
+            }
+            return res.status(200).send(book);
+        })
+})
+
+
 module.exports = bookRouter
