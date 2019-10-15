@@ -36,11 +36,11 @@ bookRouter.post("/", (req, res, next) => {
     const newBook = new Book(req.body);
     newBook.save((err, newBook) => {
         if (err) {
-            res.send(500);
+            res.status(500);
             return next(err);
         }
     })
-    return res.send(newBook);
+    return res.status(200).send(newBook);
 })
 
 
@@ -56,6 +56,21 @@ bookRouter.delete("/:_id", (req, res, next) => {
             return res.status(200).send(book);
         })
 })
+
+//PUT request
+bookRouter.put("/:_id", (req, res, next) => {
+    console.log("Hello")
+
+    Book.findByIdAndUpdate(
+        req.params._id, req.body,  
+        {new: true}, (err, book) => {
+        if(err) {
+            res.status(500)
+            return next(err);
+        }
+        return res.status(201).send(book)
+    });
+});
 
 
 module.exports = bookRouter
