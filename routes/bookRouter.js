@@ -18,8 +18,11 @@ bookRouter.get("/", (req, res, next) => {
 bookRouter.get("/search", (req, res, next) => {
     // deletes empty/undefinded search fields from the query
     for(let i in req.query){
-        if(req.query[i] === "undefined"){
+        console.log(req.query)
+        if(req.query[i] === "undefined" || ''){
+            
             delete req.query[i]
+            console.log(req.query)
         }
     }
     //searches books based on req.query
