@@ -1,1 +1,15 @@
 /* this is the css for footer*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.footerStyle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 25px;
+}
