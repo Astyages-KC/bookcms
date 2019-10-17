@@ -1,1 +1,40 @@
 /* this is the css for nav bar */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ .navMenu {
+    position: absolute;
+    list-style: none;
+    background-color: rgb(204, 195, 189);
+    border-radius: 2px 7px 7px 2px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 12vw;
+    font-size: 20px;
+    padding: 1vw;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.navIcon {
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+    text-align: center;
+  }
+
+a:visited {
+    color: red;
+}
