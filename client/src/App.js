@@ -9,12 +9,11 @@ function App() {
   return (
     <div>
       Hey it works, just uncomment what you are working on. - Kevin & Jeff
-      {/* <NavBar />
+      <NavBar />
       <Switch>
-        <Route path="/booksearch" component={BookSearch} />
         <Route path="/bookentry" component={BookEntry} />
       </Switch>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
