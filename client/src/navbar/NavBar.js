@@ -15,7 +15,7 @@ return (
       {/* <p className="navIcon">Menu</p> */}
       <button onClick={toggler} className="navIcon" >Toggle Menu</button>
       <div className={toggle ? "navMenu" : "hidden"}>
-        <a href="bookEntry">Book Entry</a>
+        <a href="/">Book Entry</a>
         <a href="bookSearch">Book Search</a>
       </div>
     </nav>

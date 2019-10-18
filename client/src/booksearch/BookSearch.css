@@ -1,1 +1,25 @@
 /* This is the css for book search*/
+
+.bookSearchsPage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+button {
+    font-size: 16px;
+    color: blue;
+}
+
+input {
+    font-size: 16px;
+}
+
+image {
+    height: 300px;
+    width: auto;
+}

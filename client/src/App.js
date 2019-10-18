@@ -8,11 +8,10 @@ import { Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div>
-      Hey it works, just uncomment what you are working on. - Kevin & Jeff
       <NavBar />
         <Switch>
           <Route path="/booksearch" component={BookSearchs} />
-          <Route path="/bookentry" component={BookEntry} />
+          <Route exact path="/" component={BookEntry} />
         </Switch>
       <Footer />
     </div>
