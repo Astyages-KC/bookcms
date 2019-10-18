@@ -32,22 +32,31 @@ const BookSearchs = () => {
         axios.get(`/bookscms/search?title=${inputs.title}&subTitle=${inputs.subTitle}&author=${inputs.author}&isbn=${inputs.isbn}`)
         .then(res => setInventory(res.data))
         .catch(err => console.log(err))
-
     }
+    // deletes an item from the database
     const handleDelete = (_id) => {
-        console.log(_id)
         axios.delete(`/bookscms/${_id}`)
         .then( () => setInventory(prev => prev.filter(item => item._id !== _id)))
         .catch(err => console.log(err))
-
     }
-
-    // const handleUpdate = (_id, updateObject) => {
-    //     console.log(_id)
-    //     axios.put(`/bookscms/${_id}`, updateObject)
-    //     .then(res => console.log(res))
-    //     .catch(err => console.log(err))
-    // }
+    // edits an item from the database
+    const handleEdit = (id, updates) => {
+        axios.put(`/bookscms/${id}`, updates)
+        .then(res => {
+            setInventory(prev => {
+                const updatedInventory = inventory.map(item => {
+                    if(item._id === id){
+                        return res.data
+                    }else{
+                        return item
+                    }
+                })
+                return updatedInventory
+                
+            })
+        })
+        .catch(err => console.log(err))
+    }
 
     return(
         <div>
@@ -62,13 +71,14 @@ const BookSearchs = () => {
             {/* Maps over inventory and displays to the screen */}
             { inventory.map(item => {
                 return (
-                    <Item 
+                    <Item key={item._id}
                         id={item._id}
                         title={item.title}
                         subTitle={item.subTitle}
                         author={item.author}
                         isbn={item.isbn}
                         handleDelete={handleDelete}
+                        handleEdit={handleEdit}
                     />
                 )
             }
