@@ -1,8 +1,8 @@
 import React from "react";
 import BookSearchs from "./booksearch/BookSearchs.js";
-// import BookEntry from "./bookentry/BookEntry.js";
-// import NavBar from "./navbar/NavBar.js";
-// import Footer from "./footer/Footer.js";
+import BookEntry from "./bookentry/BookEntry.js";
+import NavBar from "./navbar/NavBar.js";
+import Footer from "./footer/Footer.js";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
