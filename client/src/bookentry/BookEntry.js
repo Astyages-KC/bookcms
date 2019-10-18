@@ -1,7 +1,7 @@
 // This is the code for Book Entry
-
 import React, { useState } from "react";
 import axios from "axios";
+import './BookEntry.css'
 
 function BookEntry() {
 
@@ -34,8 +34,9 @@ function BookEntry() {
 
     }
     return (
-        <div>
-
+        <div className="bookEntryPage">
+            <div className="overlay">
+                <div className="formPositionEntry">
             <form onSubmit={handleSubmit}>
                 <label> Title:
                     <input
@@ -97,12 +98,13 @@ function BookEntry() {
                     />
                 </label>
                 <br />
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" className="submitButtonEntry"/>
 
 
                 {/* <button onClick={() => setTitle(title + " stuff")}> a button to click </button> */}
             </form>
-
+            </div>
+            </div>
         </div>
     );
 }

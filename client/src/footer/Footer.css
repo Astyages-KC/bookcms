@@ -5,16 +5,36 @@
     box-sizing: border-box;
 }
 
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Quattrocento', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Amatic SC', cursive; */
+
 .footerStyle {
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
     background-color: antiquewhite;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    padding: 15px;
 }
 
 image {
     height: 600px;
     width: auto;
 }
+
+@media (max-width: 790px) {
+    .footerStyle {
+    font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .footerStyle {
+        font-size: 12px;
+    }
+}
+

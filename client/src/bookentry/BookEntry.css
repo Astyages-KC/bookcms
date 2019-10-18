@@ -6,3 +6,69 @@
     box-sizing: border-box;
 }
 
+.bookEntryPage {
+    background-image: url("https://images.unsplash.com/photo-1484415063229-3d6335668531?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1688&q=80");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background-color: rgba(248, 236, 220, .6);
+    height: 100vh;
+    widows: auto;    
+}
+
+.formPositionEntry {
+    font-size: 20px;
+    position: absolute;
+    left: 42%;
+    top: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+}
+
+input {
+    font-size: 18px;
+    font-family: 'Quattrocento', serif;
+}
+
+.submitButtonEntry {
+    font-family: 'Quattrocento', serif;
+    width: 6vw;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 768px)   {
+    .formPositionEntry {
+        left: 36%;
+        top: 48%;
+        font-size: 15px;
+    }
+    .submitButtonEntry {
+        width: 6vw;
+    }
+    input {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px)   {
+    .formPositionEntry {
+        left: 31%;
+        top: 48%;
+        font-size: 13px;
+    }
+    .submitButtonEntry {
+        width: 12vw;
+    }
+    input {
+        font-size: 12px;
+    }
+}
