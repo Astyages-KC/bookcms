@@ -1,6 +1,7 @@
 // Created by Jeff, Sam and Nate uses hooks
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Item from './Item'
 
 const BookSearchs = () => {
 
@@ -31,7 +32,22 @@ const BookSearchs = () => {
         axios.get(`/bookscms/search?title=${inputs.title}&subTitle=${inputs.subTitle}&author=${inputs.author}&isbn=${inputs.isbn}`)
         .then(res => setInventory(res.data))
         .catch(err => console.log(err))
+
     }
+    const handleDelete = (_id) => {
+        console.log(_id)
+        axios.delete(`/bookscms/${_id}`)
+        .then( () => setInventory(prev => prev.filter(item => item._id !== _id)))
+        .catch(err => console.log(err))
+
+    }
+
+    // const handleUpdate = (_id, updateObject) => {
+    //     console.log(_id)
+    //     axios.put(`/bookscms/${_id}`, updateObject)
+    //     .then(res => console.log(res))
+    //     .catch(err => console.log(err))
+    // }
 
     return(
         <div>
@@ -46,12 +62,14 @@ const BookSearchs = () => {
             {/* Maps over inventory and displays to the screen */}
             { inventory.map(item => {
                 return (
-                    <div key={item._id}>
-                        <h1 >{item.title}</h1>
-                        <h4>{item.subTitle}</h4>
-                        <h5>{item.isbn}</h5>
-                        <button>Delete</button><button>Update</button>
-                    </div>
+                    <Item 
+                        id={item._id}
+                        title={item.title}
+                        subTitle={item.subTitle}
+                        author={item.author}
+                        isbn={item.isbn}
+                        handleDelete={handleDelete}
+                    />
                 )
             }
             )}
