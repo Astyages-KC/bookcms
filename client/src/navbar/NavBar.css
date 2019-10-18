@@ -13,8 +13,8 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 12vw;
-    font-size: 20px;
+    width: 10vw;
+    font-size: 15px;
     padding: 1vw;
     border: 2px solid black;
     padding: 5px;
@@ -27,14 +27,20 @@
 }
 
 .navIcon {
-    width: 50px;
+    width: 63px;
     border: 1px solid black;
     border-radius: 5px;
     padding: 3px;
     margin-left: 5px;
     text-align: center;
+    color: purple;
+    font-size: 18px;
   }
 
 a:visited {
-    color: red;
+    color: green;
+}
+
+.menuLink {
+    background-color: lightsalmon;
 }

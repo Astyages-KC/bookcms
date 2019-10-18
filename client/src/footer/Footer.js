@@ -6,6 +6,8 @@ const Footer = () => {
 
 
     return (
+        <div>
+        <img src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts123/v4/c8/21/9b/c8219b6e-3018-8bbc-3ca0-b8da7536e728/mza_6618956914887688282.jpg/268x0w.jpg"/>
         <div className="footerStyle">
             <footer>
             <p>footer stuff</p>
@@ -14,6 +16,7 @@ const Footer = () => {
             <p>Snowville, UT 84117</p>
             <p>800-867-5301</p>
             </footer>
+        </div>
         </div>
     )
 }

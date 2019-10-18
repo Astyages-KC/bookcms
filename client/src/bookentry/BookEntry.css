@@ -1,1 +1,8 @@
 /* This will be the css for book entry */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+

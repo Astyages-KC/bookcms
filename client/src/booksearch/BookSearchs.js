@@ -1,6 +1,7 @@
 // Created by Jeff, Sam and Nate uses hooks
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import './BookSearch.css'
 
 const BookSearchs = () => {
 
@@ -34,7 +35,7 @@ const BookSearchs = () => {
     }
 
     return(
-        <div>
+        <div className="bookSearchsPage">
             <form onSubmit={handleSubmit}>
                 <input type="text"  name="title" onChange={handleChange} value={inputs.title} placeholder="Search By Title"/>
                 <input type="text"  name="subTitle" onChange={handleChange} value={inputs.subTitle} placeholder="Search By Sub-Title"/>

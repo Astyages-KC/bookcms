@@ -11,5 +11,10 @@
     align-content: center;
     text-align: center;
     background-color: antiquewhite;
-    font-size: 25px;
+    font-size: 18px;
+}
+
+image {
+    height: 600px;
+    width: auto;
 }
