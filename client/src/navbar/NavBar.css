@@ -9,7 +9,7 @@
     position: fixed;
     top: 50px;
     list-style: none;
-    background-color: rgba(192, 180, 163, 0.6);
+    background-color: rgba(245, 243, 242, 0.6);
     border-radius: 2px 7px 7px 2px;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
   }
 
 a:visited {
-    color: rgb(72, 29, 112);
+    color: rgb(32, 7, 54);
 }
 
 .menuLink {

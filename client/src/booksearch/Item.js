@@ -54,8 +54,8 @@ class Item extends Component {
                         <h2>{this.props.subTitle}</h2>
                         <h4>{this.props.author}</h4>
                         <h5>{this.props.isbn}</h5>
-                        <button onClick={() => this.props.handleDelete(this.props.id)}>Delete</button>
-                        <button onClick={() => this.toggler()}>Update</button>
+                        <button className="item-button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</button>
+                        <button className="item-button" onClick={() => this.toggler()}>Update</button>
                     </div>
                     :
                     <>
@@ -71,7 +71,7 @@ class Item extends Component {
                         handleSubmit={this.handleSubmit}
                         toggler={this.toggler}
                     />
-                    <button onClick={this.toggler}>Cancel</button>
+                    <button className="item-button" onClick={this.toggler}>Cancel</button>
                     </>
                 }
             </div>

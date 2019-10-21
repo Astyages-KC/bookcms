@@ -21,10 +21,6 @@ font-family: 'Amatic SC', cursive; */
     padding: 15px;
 }
 
-image {
-    height: 600px;
-    width: auto;
-}
 
 @media (max-width: 790px) {
     .footerStyle {
