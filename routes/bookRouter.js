@@ -39,8 +39,8 @@ bookRouter.post("/", (req, res, next) => {
             res.status(500);
             return next(err);
         }
+        return res.status(200).send(newBook);
     })
-    return res.status(200).send(newBook);
 })
 
 
