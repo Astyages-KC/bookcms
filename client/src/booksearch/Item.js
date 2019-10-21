@@ -47,16 +47,16 @@ class Item extends Component {
 
     render(){
         return( 
-            <div>
+            <div className="item">
                 {!this.state.toggle ? 
-                    <>
+                    <div class="single">
                         <h1>{this.props.title}</h1>
                         <h2>{this.props.subTitle}</h2>
                         <h4>{this.props.author}</h4>
                         <h5>{this.props.isbn}</h5>
                         <button onClick={() => this.props.handleDelete(this.props.id)}>Delete</button>
                         <button onClick={() => this.toggler()}>Update</button>
-                    </>
+                    </div>
                     :
                     <>
                     <BookUpdate

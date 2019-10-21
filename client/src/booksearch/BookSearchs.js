@@ -61,7 +61,7 @@ const BookSearchs = () => {
 
     return(
         <div className="bookSearchsPage">
-            <form onSubmit={handleSubmit}>
+            <form className="searchForm" onSubmit={handleSubmit}>
                 <input type="text"  name="title" onChange={handleChange} value={inputs.title} placeholder="Search By Title"/>
                 <input type="text"  name="subTitle" onChange={handleChange} value={inputs.subTitle} placeholder="Search By Sub-Title"/>
                 <input type="text"  name="author" onChange={handleChange} value={inputs.author} placeholder="Search By Author"/>
@@ -72,7 +72,8 @@ const BookSearchs = () => {
             {/* Maps over inventory and displays to the screen */}
             { inventory.map(item => {
                 return (
-                    <Item key={item._id}
+                    <div className="thisThing">
+                    <Item key={item._id} 
                         id={item._id}
                         title={item.title}
                         subTitle={item.subTitle}
@@ -81,6 +82,7 @@ const BookSearchs = () => {
                         handleDelete={handleDelete}
                         handleEdit={handleEdit}
                     />
+                    </div>
                 )
             }
             )}
