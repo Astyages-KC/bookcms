@@ -27,9 +27,9 @@ function BookEntry() {
             .then(res => {
                 console.log(res);
                 console.log(res.data);
+                alert(`Submitted Book`);
             })
             .catch(err => console.log(err.data));
-
 
 
     }
@@ -98,10 +98,8 @@ function BookEntry() {
                     />
                 </label>
                 <br />
-                <input type="submit" value="Submit" className="submitButtonEntry"/>
-
-
-                {/* <button onClick={() => setTitle(title + " stuff")}> a button to click </button> */}
+                <input type="submit" value="Submit" className="submitButtonEntry"  />
+                
             </form>
             </div>
             </div>

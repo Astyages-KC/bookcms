@@ -6,7 +6,7 @@
 }
 
  .navMenu {
-    position: absolute;
+    position: fixed;
     top: 50px;
     list-style: none;
     background-color: rgba(192, 180, 163, 0.6);
@@ -28,7 +28,7 @@
 }
 
 .navIcon {
-    position: absolute;
+    position: fixed;
     width: 63px;
     border: 1px solid black;
     border-radius: 5px;
@@ -37,6 +37,7 @@
     text-align: center;
     color: rgb(72, 29, 112);
     font-size: 18px;
+
   }
 
 a:visited {
