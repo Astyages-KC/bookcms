@@ -1,8 +1,8 @@
 /* this is the css for footer*/
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    /* margin: 0px; */
+    /* padding: 0px; */
+    /* box-sizing: border-box; */
 }
 
 /* font-family: 'Libre Baskerville', serif;
@@ -11,9 +11,12 @@ font-family: 'Cinzel', serif;
 font-family: 'Amatic SC', cursive; */
 
 .footerStyle {
-    display: flex;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    /* display: flex; */
     justify-content: center;
-    align-content: center;
+    /* align-content: center; */
     text-align: center;
     background-color: antiquewhite;
     font-size: 16px;
@@ -28,7 +31,7 @@ image {
 
 @media (max-width: 790px) {
     .footerStyle {
-    font-size: 14px;
+    /* font-size: 14px; */
     }
 }
 
