@@ -23,3 +23,22 @@ image {
     height: 300px;
     width: auto;
 }
+.item {
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.bookSearchsPage{
+    overflow: scroll;
+    background-image: url(https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19000855/Wallpaper-Kemra-Bookshelf-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+.searchForm{
+    position: fixed;
+    top: 50px;
+}
