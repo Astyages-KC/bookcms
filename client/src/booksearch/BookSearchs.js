@@ -70,8 +70,11 @@ const BookSearchs = () => {
             </form>
 
             {/* Maps over inventory and displays to the screen */}
+            
+
             { inventory.map(item => {
                 return (
+                    
                     <div className="thisThing">
                     <Item key={item._id} 
                         id={item._id}
