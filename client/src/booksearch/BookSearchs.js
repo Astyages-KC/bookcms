@@ -108,9 +108,9 @@ const BookSearchs = () => {
         <div className="display-container">
           {inventory.map(item => {
             return (
-              <div className="displayCard">
+              <div className="displayCard" key={item._id}>
                 <Item
-                  key={item._id}
+                 
                   id={item._id}
                   title={item.title}
                   subTitle={item.subTitle}

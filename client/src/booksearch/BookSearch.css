@@ -7,18 +7,18 @@
 
 .bookSearchsPage {
     background-image: url("https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19000855/Wallpaper-Kemra-Bookshelf-1.jpg");
-    /* height: 100vh; */
+    height: 100vh;
     width: 100vw;
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
     font-family: 'Libre Baskerville', serif;
+    overflow: scroll;
 }
 
 .overlaySearch {
+    position: sticky;
     background-color: rgba(248, 236, 220, .1);
-    /* height: 100vh; */
-    widows: auto; 
 }
 
 .display-container {
@@ -64,6 +64,7 @@ image {
     position: sticky;
     display: flex;
     justify-content: center;
+    top: 0;
 }
 
 @media only screen and (max-width: 600px) {
