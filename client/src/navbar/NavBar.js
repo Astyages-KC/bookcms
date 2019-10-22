@@ -20,6 +20,7 @@ const NavBar = () => {
         <div className={toggle ? "navMenu" : "hidden"}>
           <a href="/">Book Entry</a>
           <a href="bookSearch">Book Search</a>
+          <a href="aboutus">About Us</a>
         </div>
       </nav>
     </div>
