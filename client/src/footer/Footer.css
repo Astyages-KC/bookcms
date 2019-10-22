@@ -1,8 +1,8 @@
 /* this is the css for footer*/
 * {
-    /* margin: 0px; */
-    /* padding: 0px; */
-    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /* font-family: 'Libre Baskerville', serif;
@@ -24,14 +24,10 @@ font-family: 'Amatic SC', cursive; */
     padding: 15px;
 }
 
-image {
-    height: 600px;
-    width: auto;
-}
 
 @media (max-width: 790px) {
     .footerStyle {
-    /* font-size: 14px; */
+    font-size: 14px;
     }
 }
 

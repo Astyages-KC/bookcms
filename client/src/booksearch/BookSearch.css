@@ -1,7 +1,71 @@
 /* This is the css for book search*/
 * {
-        /* box-sizing: border-box; */
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
 }
+
+.bookSearchsPage {
+    background-image: url("https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19000855/Wallpaper-Kemra-Bookshelf-1.jpg");
+    /* height: 100vh; */
+    width: 100vw;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.overlaySearch {
+    background-color: rgba(248, 236, 220, .1);
+    /* height: 100vh; */
+    widows: auto; 
+}
+
+.display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.displayCard {
+    padding: 50px;
+    align-items: flex-end;
+    text-align: center;
+    display: flex;
+    font-size: 25px;
+    border: 8px outset silver;
+    margin: 8px;
+}
+
+
+.item-button {
+    font-size: 16px;
+    width: 8vw;
+    height: 4vh;
+    margin: 10px;
+    border-radius: 7px;
+    color: rgb(151, 89, 8);
+}
+input {
+    font-size: 16px;
+}
+image {
+    height: 300px;
+    width: auto;
+}
+.item {
+
+    width: 35vw;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.searchForm {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         padding: 0;
@@ -17,43 +81,15 @@
     }
     .item {
         font-size: .7em;
+        width: 70vw;
     }
     .searchForm{
         display: flex;
         text-align: center;
         flex-direction: column;
+        padding-top: 60px;
     }
-}
-.bookSearchsPage {
-    background-image: url(https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19000855/Wallpaper-Kemra-Bookshelf-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    overflow: scroll;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 25px;
-}
-button {
-    font-size: 16px;
-    color: blue;
-}
-input {
-    font-size: 16px;
-}
-image {
-    height: 300px;
-    width: auto;
-}
-.item {
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.searchForm{
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 50px;
+    .item-button {
+        width: 16vw;
+    }
 }

@@ -45,6 +45,21 @@ input {
     background-color: whitesmoke;
 }
 
+@media (max-width: 999px) {
+    .formPositionEntry {
+        left: 38%;
+        top: 59%;
+        font-size: 18px;
+    }
+    .submitButtonEntry {
+        width: 8vw;
+} 
+input {
+    font-size: 16px;
+}
+}
+
+
 @media (max-width: 768px)   {
     .formPositionEntry {
         left: 36%;
@@ -52,21 +67,21 @@ input {
         font-size: 15px;
     }
     .submitButtonEntry {
-        width: 6vw;
+        width: 10vw;
     }
     input {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 768px)   {
+@media (max-width: 390px)   {
     .formPositionEntry {
         left: 31%;
         top: 48%;
         font-size: 13px;
     }
     .submitButtonEntry {
-        width: 12vw;
+        width: 13vw;
     }
     input {
         font-size: 12px;
