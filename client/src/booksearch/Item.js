@@ -50,10 +50,12 @@ class Item extends Component {
             <div className="item">
                 {!this.state.toggle ? 
                     <div className="single" > 
-                        <h1>{this.props.title}</h1>
-                        <h2>{this.props.subTitle}</h2>
-                        <h4>{this.props.author}</h4>
-                        <h5>{this.props.isbn}</h5>
+                        <h1>Title : {this.props.title}</h1>
+                        <h2>Sub-Title : {this.props.subTitle}</h2>
+                        <h4>Author : {this.props.author}</h4>
+                        <h5>ISBN : {this.props.isbn}</h5>
+                        <h5>Price : ${this.props.price}</h5>
+                        <h5>Purchase : ${this.props.cost}</h5>
                         <button className="item-button" onClick={() => this.props.handleDelete(this.props.id)}>Delete</button>
                         <button className="item-button" onClick={() => this.toggler()}>Update</button>
                     </div>
