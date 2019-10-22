@@ -59,13 +59,11 @@ image {
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.searchForm{
+
+.searchForm {
     position: sticky;
-    /* background-color: rgba(0, 0, 0, 0.4); */
-    top: 0px;
     display: flex;
     justify-content: center;
-    /* padding: 60px; */
 }
 
 @media only screen and (max-width: 600px) {
