@@ -25,6 +25,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: absolute;
+    top: 100px;
 }
 
 .displayCard {

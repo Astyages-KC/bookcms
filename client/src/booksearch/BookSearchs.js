@@ -116,6 +116,8 @@ const BookSearchs = () => {
                   subTitle={item.subTitle}
                   author={item.author}
                   isbn={item.isbn}
+                  price={item.price}
+                  cost={item.cost}
                   handleDelete={handleDelete}
                   handleEdit={handleEdit}
                 />
