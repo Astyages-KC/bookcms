@@ -11,10 +11,9 @@ font-family: 'Cinzel', serif;
 font-family: 'Amatic SC', cursive; */
 
 .footerStyle {
-    position: absolute;
     width: 100vw;
     bottom: 0;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     /* align-content: center; */
     text-align: center;

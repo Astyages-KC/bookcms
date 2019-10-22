@@ -49,7 +49,7 @@ class Item extends Component {
         return( 
             <div className="item">
                 {!this.state.toggle ? 
-                    <div class="single">
+                    <div className="single" > 
                         <h1>{this.props.title}</h1>
                         <h2>{this.props.subTitle}</h2>
                         <h4>{this.props.author}</h4>
