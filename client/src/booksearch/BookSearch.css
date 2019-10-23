@@ -80,11 +80,7 @@ image {
         padding: 0;
         margin: 0;
     }
-    .searchForm{
-        left: 140px;
-        position: absolute;
-        top: 50px;
-    }
+    
     .bookSearchsPage{
         overflow: scroll;
         height: 100vh;
@@ -98,9 +94,17 @@ image {
         display: flex;
         text-align: center;
         flex-direction: column;
-        padding-top: 60px;
+        padding-top: 0px;
+        left: 100px;
+        position: absolute;
+        top: 50px;
+        padding: 0px;
+        margin: 0px;
     }
     .item-button {
         width: 16vw;
+    }
+    .displayCard {
+        padding: 0px;
     }
 }

@@ -14,12 +14,12 @@ function BookEntry() {
         isbn: ""
     };
     const [inputs, setInputs] = useState(initInputs);
+    const [modalOpen, setModalOpen] = useState(false)
 
     const handleChange = e => {
         const { name, value } = e.target;
         setInputs(prevInputs => ({ ...prevInputs, [name]: value }));
     };
-
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -27,12 +27,12 @@ function BookEntry() {
             .then(res => {
                 console.log(res);
                 console.log(res.data);
-                alert(`Submitted Book`);
             })
             .catch(err => console.log(err.data));
-
-
+        setModalOpen(prev => !prev)
+        
     }
+    
     return (
         <div className="bookEntryPage">
             <div className="overlay">
@@ -101,6 +101,18 @@ function BookEntry() {
                 <input type="submit" value="Submit" className="submitButtonEntry"  />
                 
             </form>
+            { modalOpen && 
+                <div className="modal">
+                    <h1>Book Was Entered Succesfully.</h1>
+                    <h2>Title: {inputs.title}</h2>
+                    <h3>Sub-Title: {inputs.subTitle}</h3>
+                    <h3>Author: {inputs.author}</h3>
+                    <h5>ISBN: {inputs.isbn}</h5>
+                    <h5>Purchase Price: ${inputs.cost}</h5>
+                    <h5>Sale Price: ${inputs.price}</h5>
+                    <button onClick={() => setModalOpen(p => !p)}>Close</button>
+                </div>
+            }
             </div>
             </div>
         </div>
