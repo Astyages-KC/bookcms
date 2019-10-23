@@ -8,7 +8,7 @@
     font-size: 20px;
     font-family: 'Libre Baskerville', serif;
     background-color: tan;
-    padding: 20px;
+    padding: 0px;
     background-image: url("https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
 
 }
@@ -23,11 +23,13 @@
      width: 600px;
      height: 450px;
     /* border: 2px solid black; */
-    margin: 30px;
+    margin: 10px;
+    padding: 8px;
     box-shadow: 0 0 8px 8px rgba(218, 179, 139, 0.8) inset;
 }
 
 .overlay {
     background-color: rgba(248, 236, 220, .6);
     height: 100vh;
+    padding: 30px;
 }
